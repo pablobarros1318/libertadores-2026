@@ -1,0 +1,57 @@
+/* ============================================================
+   Variables globales — paleta marrón/sepia + dorado Libertadores
+   ============================================================ */
+:root {
+  --gold:       #C8A74A;
+  --gold-light: #E8C96A;
+  --gold-dark:  #9A7A2A;
+  --bg:         #1A0E06;
+  --bg2:        #231508;
+  --bg3:        #2E1C0C;
+  --bg4:        #3D2511;
+  --white:      #F5EFE6;
+  --gray:       #A09080;
+  --gray2:      #6A5040;
+  --green:      #2ECC71;
+  --red:        #C8102E;
+
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-condensed: 'Barlow Condensed', sans-serif;
+  --font-body: 'Barlow', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: linear-gradient(180deg, #0D0703 0%, var(--bg) 100%);
+  color: var(--white);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+button { cursor: pointer; font-family: inherit; }
+input, select { font-family: inherit; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg2); }
+::-webkit-scrollbar-thumb { background: var(--bg4); border-radius: 3px; }
+
+/* Animaciones */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(16px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

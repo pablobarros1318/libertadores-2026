@@ -1,0 +1,144 @@
+.header {
+  background: linear-gradient(180deg, #0A0503 0%, var(--bg2) 100%);
+  border-bottom: 2px solid var(--gold-dark);
+  box-shadow: 0 4px 40px rgba(0,0,0,0.6);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo {
+  width: 52px;
+  height: auto;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.6));
+}
+
+.titles { line-height: 1.15; }
+
+.h1 {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  letter-spacing: 2px;
+  color: var(--gold);
+}
+
+.sub {
+  font-family: var(--font-condensed);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.seasonBadge {
+  background: var(--gold);
+  color: var(--bg);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: 2px;
+  padding: 3px 12px;
+  border-radius: 4px;
+}
+
+.adminBtn {
+  background: var(--bg3);
+  border: 1px solid var(--bg4);
+  color: var(--gray);
+  font-family: var(--font-condensed);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.15s;
+}
+.adminBtn:hover { border-color: var(--gold-dark); color: var(--gold); }
+
+/* Login bar */
+.loginBar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 8px 20px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.loginForm {
+  display: flex;
+  gap: 8px;
+}
+
+.loginInput {
+  background: var(--bg3);
+  border: 1px solid var(--bg4);
+  border-radius: 6px;
+  color: var(--white);
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  outline: none;
+  width: 200px;
+  transition: border-color 0.2s;
+}
+.loginInput:focus { border-color: var(--gold-dark); }
+.loginInputError { border-color: var(--red) !important; }
+
+.loginSubmit {
+  background: var(--gold);
+  color: var(--bg);
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-condensed);
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  transition: background 0.15s;
+}
+.loginSubmit:hover { background: var(--gold-light); }
+
+.loginCancel {
+  background: var(--bg3);
+  border: 1px solid var(--bg4);
+  color: var(--gray);
+  border-radius: 6px;
+  padding: 8px 10px;
+  transition: all 0.15s;
+}
+.loginCancel:hover { color: var(--white); }
+
+.loginError {
+  font-family: var(--font-condensed);
+  font-size: 0.75rem;
+  color: var(--red);
+  letter-spacing: 1px;
+}
+
+@media (max-width: 480px) {
+  .h1 { font-size: 1.1rem; }
+  .sub { display: none; }
+}
