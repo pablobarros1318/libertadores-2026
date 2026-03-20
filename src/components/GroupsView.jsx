@@ -22,9 +22,12 @@ export default function GroupsView() {
               {g.isOurGroup && <span className={styles.ourBadge}>TU GRUPO ⭐</span>}
             </div>
             <div className={styles.teamsList}>
-              {g.teams.map((t) => (
+              {g.teams.map((t) => (                
                 <div key={t.name} className={`${styles.teamItem} ${t.isPlatense ? styles.platense : ''}`}>
-                  <span>{t.flag}</span>
+                  {t.logo
+                    ? <img src={t.logo} alt={t.name} className={styles.teamLogo} />
+                    : <span>{t.flag}</span>
+                  }
                   <span>{t.name}</span>
                   {t.isPlatense && <span className={styles.squid}>🦑</span>}
                 </div>

@@ -59,10 +59,10 @@ export const ALL_GROUPS = [
     letter: 'E',
     isOurGroup: true,
     teams: [
-      { name: 'Peñarol',        flag: '🇺🇾' },
-      { name: 'Corinthians',    flag: '🇧🇷' },
-      { name: 'Ind. Santa Fe',  flag: '🇨🇴' },
-      { name: 'Platense',       flag: '🇦🇷', isPlatense: true },
+      { name: 'Peñarol',        flag: '🇺🇾', logo: '/escudos/penarol.png' },
+      { name: 'Corinthians',    flag: '🇧🇷', logo: '/escudos/corinthians.png' },
+      { name: 'Ind. Santa Fe',  flag: '🇨🇴', logo: '/escudos/santafe.png' },
+      { name: 'Platense',       flag: '🇦🇷', logo: '/escudos/platense.png',isPlatense: true },
     ],
   },
   {
