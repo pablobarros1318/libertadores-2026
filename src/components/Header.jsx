@@ -22,10 +22,10 @@ export default function Header({ isAdmin, onLogin, onLogout }) {
     <header className={styles.header}>
       <div className={styles.inner}>
         <div className={styles.left}>
-          <img
-            src="/logo-filial.png"
-            alt="Filial Horacio Barros"
-            className={styles.logo}
+          <img 
+            src="/libertadores-gold-white.png" 
+            alt="Conmebol Libertadores"
+            className={styles.logoLibertadores}
           />
           <div className={styles.titles}>
             <h1 className={styles.h1}>Copa Libertadores 2026</h1>
@@ -33,17 +33,22 @@ export default function Header({ isAdmin, onLogin, onLogout }) {
           </div>
         </div>
 
+
         <div className={styles.right}>
-          <span className={styles.seasonBadge}>2026</span>
+          <img
+            src="/logo-filial.png"
+            alt="Filial Horacio Barros"
+            className={styles.logo}
+          />
           {isAdmin ? (
             <button className={styles.adminBtn} onClick={onLogout} title="Cerrar sesión admin">
               🔓 Admin
             </button>
           ) : (
             <button
-              className={styles.adminBtn}
-              onClick={() => setShowLogin((v) => !v)}
-              title="Iniciar sesión admin"
+            className={styles.adminBtn}
+            onClick={() => setShowLogin((v) => !v)}
+            title="Iniciar sesión admin"
             >
               🔒
             </button>

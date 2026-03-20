@@ -11,7 +11,7 @@ export default function GroupsView() {
       </div>
 
       <p className={styles.subtitle}>
-        Panorama general · Los 2 primeros de cada grupo clasifican a Octavos de Final
+        Los 2 primeros de cada grupo clasifican a Octavos de Final
       </p>
 
       <div className={styles.grid}>

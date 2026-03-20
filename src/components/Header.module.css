@@ -30,6 +30,20 @@
   filter: drop-shadow(0 2px 8px rgba(0,0,0,0.6));
 }
 
+.logoLibertadores {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.9;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
+}
+
+@media (max-width: 480px) {
+  .logoLibertadores {
+    height: 38px;
+  }
+}
+
 .titles { line-height: 1.15; }
 
 .h1 {
