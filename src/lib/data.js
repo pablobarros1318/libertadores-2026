@@ -13,46 +13,46 @@ export const FECHA_LABELS = {
   1: { range: '7 – 9 de Abril',      note: 'Local vs Corinthians' },
   2: { range: '14 – 16 de Abril',    note: 'Visita Peñarol (Montevideo)' },
   3: { range: '28 – 30 de Abril',    note: 'Local vs Ind. Santa Fe' },
-  4: { range: '5 – 7 de Mayo',       note: 'Visita Corinthians (San Pablo)' },
-  5: { range: '19 – 21 de Mayo',     note: 'Local vs Peñarol' },
-  6: { range: '26 – 28 de Mayo',     note: 'Visita Ind. Santa Fe (Bogotá)' },
+  4: { range: '5 – 7 de Mayo',       note: 'Local vs Peñarol' },
+  5: { range: '19 – 21 de Mayo',     note: 'Visita vs Ind. Santa Fe (Bogotá)' },
+  6: { range: '26 – 28 de Mayo',     note: 'Visita vs Corinthians (São Paulo)' },
 }
 
 export const ALL_GROUPS = [
   {
     letter: 'A',
     teams: [
-      { name: 'Flamengo',       flag: '🇧🇷' },
-      { name: 'Estudiantes',    flag: '🇦🇷' },
-      { name: 'Cusco',          flag: '🇵🇪' },
-      { name: 'Ind. Medellín',  flag: '🇨🇴' },
+      { name: 'Flamengo',       flag: '🇧🇷', logo: '/escudos/flamengo.png' },
+      { name: 'Estudiantes',    flag: '🇦🇷', logo: '/escudos/estudiantes.png' },
+      { name: 'Cusco',          flag: '🇵🇪', logo: '/escudos/cusco.png' },
+      { name: 'Ind. Medellín',  flag: '🇨🇴', logo: '/escudos/medellin.png' },
     ],
   },
   {
     letter: 'B',
     teams: [
-      { name: 'Nacional',       flag: '🇺🇾' },
-      { name: 'Universitario',  flag: '🇵🇪' },
-      { name: 'Coquimbo Unido', flag: '🇨🇱' },
-      { name: 'D. Tolima',      flag: '🇨🇴' },
+      { name: 'Nacional',       flag: '🇺🇾',logo: '/escudos/nacional.png' },
+      { name: 'Universitario',  flag: '🇵🇪', logo: '/escudos/universitario.png' },
+      { name: 'Coquimbo Unido', flag: '🇨🇱', logo: '/escudos/coquimbo.png' },
+      { name: 'D. Tolima',      flag: '🇨🇴', logo: '/escudos/tolima.png' },
     ],
   },
   {
     letter: 'C',
     teams: [
-      { name: 'Fluminense',     flag: '🇧🇷' },
-      { name: 'Bolivar',        flag: '🇧🇴' },
-      { name: 'D. La Guaira',   flag: '🇻🇪' },
-      { name: 'Ind. Rivadavia', flag: '🇦🇷' },
+      { name: 'Fluminense',     flag: '🇧🇷', logo: '/escudos/fluminense.png' },
+      { name: 'Bolivar',        flag: '🇧🇴', logo: '/escudos/bolivar.png' },
+      { name: 'D. La Guaira',   flag: '🇻🇪', logo: '/escudos/laguaira.png' },
+      { name: 'Ind. Rivadavia', flag: '🇦🇷', logo: '/escudos/rivadavia.png' },
     ],
   },
   {
     letter: 'D',
     teams: [
-      { name: 'Boca Juniors',   flag: '🇦🇷' },
-      { name: 'Cruzeiro',       flag: '🇧🇷' },
-      { name: 'U. Católica',    flag: '🇨🇱' },
-      { name: 'Barcelona SC',   flag: '🇪🇨' },
+      { name: 'Boca Juniors',   flag: '🇦🇷', logo: '/escudos/boca.png' },
+      { name: 'Cruzeiro',       flag: '🇧🇷', logo: '/escudos/cruzeiro.png' },
+      { name: 'U. Católica',    flag: '🇨🇱', logo: '/escudos/catolica.png' },
+      { name: 'Barcelona SC',   flag: '🇪🇨', logo: '/escudos/barcelona.png' },
     ],
   },
   {
@@ -68,28 +68,28 @@ export const ALL_GROUPS = [
   {
     letter: 'F',
     teams: [
-      { name: 'Palmeiras',      flag: '🇧🇷' },
-      { name: 'Cerro Porteño',  flag: '🇵🇾' },
-      { name: 'Junior',         flag: '🇨🇴' },
-      { name: 'Sporting Cristal', flag: '🇵🇪' },
+      { name: 'Palmeiras',      flag: '🇧🇷', logo: '/escudos/palmeiras.png' },
+      { name: 'Cerro Porteño',  flag: '🇵🇾', logo: '/escudos/cerro.png' },
+      { name: 'Junior',         flag: '🇨🇴', logo: '/escudos/junior.png' },
+      { name: 'Sporting Cristal', flag: '🇵🇪', logo: '/escudos/cristal.png' },
     ],
   },
   {
     letter: 'G',
     teams: [
-      { name: 'Liga de Quito',  flag: '🇪🇨' },
-      { name: 'Lanús',          flag: '🇦🇷' },
-      { name: 'Always Ready',   flag: '🇧🇴' },
-      { name: 'Mirassol',       flag: '🇧🇷' },
+      { name: 'Liga de Quito',  flag: '🇪🇨', logo: '/escudos/quito.png' },
+      { name: 'Lanús',          flag: '🇦🇷', logo: '/escudos/lanus.png' },
+      { name: 'Always Ready',   flag: '🇧🇴', logo: '/escudos/alwaysready.png' },
+      { name: 'Mirassol',       flag: '🇧🇷', logo: '/escudos/mirassol.png' },
     ],
   },
   {
     letter: 'H',
     teams: [
-      { name: 'Ind. del Valle', flag: '🇪🇨' },
-      { name: 'Libertad',       flag: '🇵🇾' },
-      { name: 'R. Central',     flag: '🇦🇷' },
-      { name: 'UCV FC',         flag: '🇻🇪' },
+      { name: 'Ind. del Valle', flag: '🇪🇨', logo: '/escudos/delvalle.png' },
+      { name: 'Libertad',       flag: '🇵🇾', logo: '/escudos/libertad.png' },
+      { name: 'R. Central',     flag: '🇦🇷', logo: '/escudos/central.png' },
+      { name: 'UCV FC',         flag: '🇻🇪', logo: '/escudos/ucv.png' },
     ],
   },
 ]
