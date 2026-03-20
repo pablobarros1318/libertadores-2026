@@ -24,7 +24,11 @@ export default function MatchCard({ match, isAdmin, onEdit }) {
       <div className={`${styles.body} ${isAdmin ? styles.clickable : ''}`} onClick={handleClick}>
         {/* Local */}
         <div className={styles.teamSide}>
-          <span className={styles.flag}>{home.flag}</span>
+          <span className={styles.flag}>
+            {home.logo?
+            <img src={home.logo} alt={home.name} className={styles.teamLogo} />
+            : <span className={styles.flag}>{home.flag}</span>}
+          </span>
           <div>
             <div className={styles.teamName}>{home.name}</div>
             <div className={styles.teamCountry}>{home.country}</div>
@@ -52,7 +56,10 @@ export default function MatchCard({ match, isAdmin, onEdit }) {
 
         {/* Visitante */}
         <div className={`${styles.teamSide} ${styles.away}`}>
-          <span className={styles.flag}>{away.flag}</span>
+          {away.logo?
+            <img src={away.logo} alt={away.name} className={styles.teamLogo} />
+            : <span className={styles.flag}>{away.flag}</span>
+          }
           <div>
             <div className={styles.teamName}>{away.name}</div>
             <div className={styles.teamCountry}>{away.country}</div>

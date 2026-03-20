@@ -3,10 +3,10 @@
 // ============================================================
 
 export const TEAMS = {
-  platense:    { name: 'Platense',       country: 'Argentina', flag: '🇦🇷' },
-  peñarol:     { name: 'Peñarol',        country: 'Uruguay',   flag: '🇺🇾' },
-  corinthians: { name: 'Corinthians',    country: 'Brasil',    flag: '🇧🇷' },
-  santafe:     { name: 'Ind. Santa Fe',  country: 'Colombia',  flag: '🇨🇴' },
+  platense:    { name: 'Platense',       country: 'Argentina', flag: '🇦🇷', logo: '/escudos/platense.png' },
+  peñarol:     { name: 'Peñarol',        country: 'Uruguay',   flag: '🇺🇾', logo: '/escudos/penarol.png' },
+  corinthians: { name: 'Corinthians',    country: 'Brasil',    flag: '🇧🇷', logo: '/escudos/corinthians.png' },
+  santafe:     { name: 'Ind. Santa Fe',  country: 'Colombia',  flag: '🇨🇴', logo: '/escudos/santafe.png' },
 }
 
 export const FECHA_LABELS = {
