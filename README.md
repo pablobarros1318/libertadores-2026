@@ -1,11 +1,10 @@
-# Copa Libertadores 2026 — Filial Horacio Barros 🐟
-
+# Copa Libertadores 2026 — Filial Horacio Barros 
 Fixture interactivo del Grupo E con tabla de posiciones en tiempo real.  
 Stack: **React + Vite · Supabase · Vercel**
 
 ---
 
-## 🚀 Setup paso a paso
+## Setup paso a paso
 
 ### 1. Clonar y preparar el repo
 
@@ -54,7 +53,7 @@ VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 VITE_ADMIN_PASSWORD=elegí_una_contraseña_segura
 ```
 
-> ⚠️ El `.env` nunca se sube al repo (está en `.gitignore`).  
+> El `.env` nunca se sube al repo (está en `.gitignore`).  
 > Las variables se configuran por separado en Vercel.
 
 ---
@@ -148,15 +147,3 @@ libertadores/
 └── vite.config.js
 ```
 
----
-
-## 🏆 Fixture Grupo E — Localías
-
-| Fecha | Partido | Condición Platense |
-|-------|---------|-------------------|
-| F1 | **Platense vs Corinthians** | 🏠 Local — Vicente López |
-| F2 | **Peñarol vs Platense** | ✈️ Visitante — Montevideo |
-| F3 | **Platense vs Ind. Santa Fe** | 🏠 Local — Vicente López |
-| F4 | **Corinthians vs Platense** | ✈️ Visitante — San Pablo |
-| F5 | **Platense vs Peñarol** | 🏠 Local — Vicente López |
-| F6 | **Ind. Santa Fe vs Platense** | ✈️ Visitante — Bogotá |

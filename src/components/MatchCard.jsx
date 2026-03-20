@@ -45,7 +45,7 @@ export default function MatchCard({ match, isAdmin, onEdit }) {
           <div className={styles.time}>
             {match.match_time
               ? `🕐 ${match.match_time}${match.match_date ? ` · ${formatDate(match.match_date)}` : ''}`
-              : isAdmin ? '⌚Sin horario' : '–'}
+              : isAdmin ? 'Sin horario' : 'Horario a Confirmar'}
           </div>
           <span className={`${styles.status} ${statusLabel.cls}`}>{statusLabel.text}</span>
         </div>
