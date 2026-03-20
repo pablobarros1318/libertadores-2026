@@ -52,7 +52,10 @@ export default function StandingsView({ matches }) {
             <div key={s.team} className={rowClass}>
               <span className={styles.colPos}>{pos}</span>
               <span className={styles.colTeam}>
-                <span>{t.flag}</span>
+                {t.logo
+                  ? <img src={t.logo} alt={t.name} className={styles.teamLogo} />
+                  : <span>{t.flag}</span>
+                }
                 <span className={styles.teamName}>{t.name}</span>
               </span>
               <span className={styles.colNum}>{s.pj}</span>

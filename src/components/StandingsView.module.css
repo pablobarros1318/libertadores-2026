@@ -99,6 +99,12 @@
 
 .teamName { color: var(--white); }
 
+.teamLogo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
 .colNum {
   font-family: var(--font-condensed);
   font-size: 0.85rem;
